@@ -1,11 +1,16 @@
 from sys import argv
 from os import path 
-from ply import lex
+from ply import lex, yacc
 """
 This next import allows PLY lex to be aware of our lexical 
 specification. Without it, everything breaks :)
 """
 from ivy_lexer import *
+"""
+This next import allows PLY yacc to be aware of our syntax
+specification. Without it, everything breaks again :)
+"""
+from ivy_parser import *
 
 def main():
     """
@@ -49,8 +54,23 @@ def main():
         3) Line number
         4) Character number within the line
         """
+        print("PRINTING TOKENS")
+        print("***************")
         for token in myTokens:
             print(token)
+
+        """
+        These are PLY yacc specific functions. See the PLY documentation
+        `https://www.dabeaz.com/ply/ply.html#ply_nn23` for details on 
+        these functions
+        """
+        parser = yacc.yacc()
+        parsed_output = parser.parse(contents,lexer=lexer)
+        print("**********************")
+        print("PRINTING PARSER OUTPUT")
+        print("**********************")
+        print(parsed_output)
+        
 
         
 
