@@ -1,2 +1,10 @@
 # Ivy-Compiler
-This is the compiler for my Ivy project
+This is the compiler for my Ivy project. A small toy programming language that I hope to grow one day!
+
+To create this compiler, I am taking advantage of the PLY module which provides Lex and Yacc functionality in Python :) Back in college, I had the pleasure (and anguish) of writing a compiler using Flex and Bison using C/C++. I'm a couple years removed from that course now and have finally recovered (yes, I'm sort of joking) enough to tackle writing a compiler again!
+
+If you come across this project, feel free to shoot me an email at nabab47@gmail.com to inquire more about it! I'd love others to contribute! :)
+
+Cheers,
+
+Animesh
