@@ -13,9 +13,9 @@ Animesh
 
 ## Usage Instructions
 
-To run the Ivy compiler, run:
-python ivy.py <input>
-Ex: python ivy.py test.py
+To run the Ivy compiler, run:<br>
+`python ivy.py <input>`<br>
+Ex: `python ivy.py test.py`
 
 ## Dependencies
 
